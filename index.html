@@ -78,7 +78,7 @@
   a { color: inherit; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
   .wrap { max-width: 70rem; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
- 
+
   /* Header */
   header.top {
     position: sticky; top: 0; z-index: 20;
@@ -103,7 +103,7 @@
   }
   .header-icons a:hover { border-color: var(--accent); color: var(--accent); }
   .header-icons svg { width: 1.05rem; height: 1.05rem; }
- 
+
   /* Hero */
   .hero { padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 4.5rem); }
   .hero-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: center; }
@@ -129,7 +129,7 @@
   }
   .cta::after { content: " \2192"; }
   .cta:hover { filter: brightness(1.08); }
- 
+
   /* Terminal card */
   .term {
     background: var(--surface); border: 1px solid var(--rule); border-radius: 10px;
@@ -146,7 +146,7 @@
   .term-body .cmd::before { content: "$ "; color: var(--accent); }
   .term-body .out { color: var(--ink-soft); overflow-wrap: anywhere; }
   .caret { display: inline-block; width: 0.55em; height: 1.05em; background: var(--accent); vertical-align: text-bottom; margin-left: 2px; }
- 
+
   /* Sections */
   section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; border-top: 1px solid var(--rule); }
   h2 {
@@ -155,7 +155,7 @@
   }
   h2::before { content: "// "; color: var(--accent); font-family: var(--mono); font-weight: 400; font-size: 0.7em; letter-spacing: 0; }
   .lede { color: var(--ink-soft); margin: 0 0 2rem; max-width: 36rem; }
- 
+
   /* Filters */
   .filters[hidden] { display: none; }
   .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
@@ -166,7 +166,7 @@
   }
   .filters button:hover { border-color: var(--accent); color: var(--accent); }
   .filters button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
- 
+
   /* Project list */
   .projects { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
   .project { border-bottom: 1px solid var(--rule); }
@@ -198,7 +198,7 @@
   }
   .p-links a:hover { background: var(--accent); color: var(--accent-ink); }
   .empty { padding: 2rem 1rem; color: var(--ink-soft); }
- 
+
   /* About / experience */
   .two { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
   @media (min-width: 52rem) { .two { grid-template-columns: 1.1fr 1fr; gap: 4rem; } }
@@ -217,7 +217,7 @@
   .exp-points li { padding: 0; border: 0; margin-bottom: 0.4rem; }
   .exp strong { font-family: var(--display); font-size: 1.15rem; display: block; letter-spacing: -0.01em; }
   .exp span { color: var(--ink-soft); font-family: var(--mono); font-size: 0.82rem; }
- 
+
   /* Contact */
   .contact-links { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; font-family: var(--mono); font-size: 0.95rem; }
   .contact-links a {
@@ -226,7 +226,7 @@
   }
   .contact-links a:hover { border-color: var(--accent); }
   footer { padding: 2rem 0 3rem; color: var(--ink-soft); font-family: var(--mono); font-size: 0.82rem; border-top: 1px solid var(--rule); }
- 
+
   @media (prefers-reduced-motion: no-preference) {
     .hero h1 { animation: rise 0.7s cubic-bezier(.2,.7,.2,1) both; }
     .term { animation: rise 0.7s 0.15s cubic-bezier(.2,.7,.2,1) both; }
@@ -248,7 +248,7 @@
       <span class="header-icons" id="header-icons" aria-label="Quick contact links"></span>
     </nav>
   </header>
- 
+
   <main id="top">
     <div class="hero">
       <div class="hero-grid">
@@ -264,14 +264,14 @@
         </div>
       </div>
     </div>
- 
+
     <section id="projects" aria-labelledby="projects-h">
       <h2 id="projects-h">Projects</h2>
       <p class="lede" id="projects-lede"></p>
       <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
       <ul class="projects" id="project-list"></ul>
     </section>
- 
+
     <section id="about" aria-labelledby="about-h">
       <div class="two">
         <div class="about">
@@ -287,19 +287,19 @@
         </div>
       </div>
     </section>
- 
+
     <section id="contact" aria-labelledby="contact-h">
       <h2 id="contact-h">Contact</h2>
       <p class="lede" id="contact-lede"></p>
       <div class="contact-links" id="contact-links"></div>
     </section>
   </main>
- 
+
   <footer>
     <span id="foot"></span>
   </footer>
 </div>
- 
+
 <script>
 /* ============================================================
    EDIT THIS BLOCK. Everything on the page is built from it.
@@ -329,7 +329,7 @@ const SITE = {
       points: [
         "Evaluated AI-powered risk intelligence platforms processing thousands of real-time data sources to inform enterprise tool selection.",
         "Pitched a production-ready AI platform recommendation directly to C-suite executives, translating complex technical analysis into actionable business insights.",
-        "Improved upstream supplier visibility to 95%, strengthening business continuity through enhanced risk detection and proactive analytics."
+        "Improved upstream supplier visibility from 45% to 95%, strengthening business continuity through enhanced risk detection and proactive analytics."
       ]
     },
     {
@@ -348,7 +348,7 @@ const SITE = {
     { label: "Resume (PDF)", href: "trevor-strother-resume.pdf" }   // put trevor-strother-resume.pdf next to index.html on your host
   ]
 };
- 
+
 const PROJECTS = [
   {
     title: "DeskOracle \u2013 AI-Assisted IT Ticket Triage System",
@@ -357,12 +357,12 @@ const PROJECTS = [
     course: "",
     tags: ["Machine learning", "Backend"],
     stat: "98% classification accuracy on 2,883 tickets \u00b7 75.6% recall gap found and fixed",
-    stack: "Python, FastAPI, Streamlit",
+    stack: "Python, FastAPI, Streamlit, scikit-learn",
     summary: "An IT ticket triage app that retrieves relevant knowledge-base articles with TF-IDF and predicts ticket category and priority with a rule-based classifier.",
     points: [
-      "Built and deployed an IT ticket triage app (FastAPI, Streamlit) that retrieves relevant knowledge-base articles with TF-IDF and predicts ticket category and priority with a rule-based classifier.",
-      "Evaluated the classifier on 2,883 synthetic tickets: 98% accuracy overall, but per-category precision/recall exposed a 75.6% recall gap on Security tickets (59 misrouted as Hardware) that accuracy alone hid.",
-      "Wrote a 22-test pytest suite with GitHub Actions CI, including a mocked Claude API integration tested against malformed output, API errors, and thinking-block responses, and centralized category definitions into one validated module to stop silent label drift."
+      "Built and deployed an AI ticket triage app (FastAPI, Streamlit) that uses TF-IDF knowledge-base retrieval and the Claude API to predict category and priority, with a rule-based fallback.",
+      "Evaluated the classifier on 2,883 synthetic tickets (98% accuracy); precision/recall analysis exposed a 75.6% recall gap on Security tickets that accuracy alone hid.",
+      "Wrote a 22-test pytest suite with GitHub Actions CI, including mocked-LLM failure tests, and centralized category definitions to prevent silent label drift."
     ],
     links: { code: "https://github.com/TR3V77/DeskOracle", demo: "https://deskoracle.streamlit.app/" }
   },
@@ -383,7 +383,7 @@ const PROJECTS = [
     links: { code: "https://github.com/TR3V77/energytracker", demo: "https://energytracker-frontend.onrender.com" }
   },
   {
-    title: "Fleet Support Analytics & Forecasting",
+    title: "Fleet Health & Support Forecasting",
     date: "2026-09",
     year: "September 2026",
     course: "",
@@ -401,12 +401,12 @@ const PROJECTS = [
   }
 ];
 /* ============================================================ */
- 
+
 PROJECTS.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
- 
+
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text) n.textContent = text; return n; };
- 
+
 document.title = SITE.name + " | Computer Science & Data Projects";
 $("brand").textContent = SITE.name;
 $("hero-sub").textContent = SITE.heroSub;
@@ -445,7 +445,7 @@ const listJoin = (a) => a.length < 3 ? a.join(" and ") : a.slice(0, -1).join(", 
 $("about-3").textContent = "I am most interested in " + listJoin(SITE.interests) + ".";
 $("contact-lede").textContent = "Open to full-time roles in " + listJoin(SITE.interests) + ", starting after graduation in December 2026.";
 $("foot").textContent = "© " + new Date().getFullYear() + " " + SITE.name;
- 
+
 SITE.skills.forEach(s => $("skills").appendChild(el("span", "", s)));
 SITE.experience.forEach(e => {
   const li = el("li");
@@ -465,11 +465,11 @@ if (shown.length) {
 } else {
   $("contact-links").appendChild(el("span", "", "Add your links in the SITE block at the top of the script."));
 }
- 
+
 /* Projects */
 let activeTag = "All";
 const tags = ["All", ...Array.from(new Set(PROJECTS.flatMap(p => p.tags)))];
- 
+
 function renderFilters() {
   const box = $("filters"); box.innerHTML = "";
   box.hidden = PROJECTS.length < 3;
@@ -481,7 +481,7 @@ function renderFilters() {
     box.appendChild(b);
   });
 }
- 
+
 function renderProjects() {
   const list = $("project-list"); list.innerHTML = "";
   const items = PROJECTS.filter(p => activeTag === "All" || p.tags.includes(activeTag));
@@ -514,8 +514,7 @@ function renderProjects() {
 $("projects-lede").textContent = PROJECTS.length < 3 ? "Select a project to read more." : "Select a project to read more. Use the filters to narrow the list.";
 renderFilters(); renderProjects();
 if (PROJECTS.length === 1) { const only = document.querySelector(".project > button"); if (only) only.click(); }
- 
+
 </script>
 </body>
 </html>
- 
